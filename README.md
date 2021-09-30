@@ -1,8 +1,8 @@
-# Anteater-Baja-Racing
+# Anteater-BAJA-Racing
 
 ## Intro
 
-This repo contains the code for the Anteater BAJA RAcing teams steering and suspension simulations.
+This repo contains the code for the Anteater BAJA Racing teams steering and suspension simulations.
 
 
 ## Setting Up Your Windows Machine to Share Code with MATLAB
