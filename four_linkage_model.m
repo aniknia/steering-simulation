@@ -1,4 +1,7 @@
-% Values for testing
+% clears previous fiugres
+clear, clc, close all
+
+% values for testing
 a = 3;
 b = a;
 cx = 0;
