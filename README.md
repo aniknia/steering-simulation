@@ -49,3 +49,15 @@ If you do not have permission to edit the path, close MATLAB and reopen it in ad
 
 
 ## Using Git with MATLAB
+
+#### Standard Git Commit Prefixes
+These are standard prefixes that you use at the begining of a git commit message that helps to show others what you've done. These will help us understand when certain changes were made at a glance.
+
+- feat: The new feature you're adding
+- fix: A bug fix
+- style: Feature and updates related to styling
+- refactor: Refactoring a specific section of the codebase
+- test: Everything related to testing
+- docs: Everything related to documentation
+- chore: Regular code maintenance
+
