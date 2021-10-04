@@ -2,7 +2,7 @@ clear, clc, close all
 
 
 SR = 15 %steering ratio: given from rack and pinion
-Steering_Angle = -100:0.01:100; %degrees: desired for better control? degree value varies based on geomtry
+Steering_Angle = -15:0.01:15; %degrees: desired for better control? degree value varies based on geomtry
 delta_vir = [Steering_Angle/SR]*180/pi; %converted from rad to degree
 
 WB = 59.7; %Wheel Base [inches]
