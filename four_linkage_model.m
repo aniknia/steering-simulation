@@ -1,4 +1,4 @@
-% clears previous fiugres
+% clears previous figures
 clear, clc, close all
 
 % values for testing
