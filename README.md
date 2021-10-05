@@ -60,3 +60,13 @@ These are standard prefixes that you use at the beginning of a git commit messag
 - test: Everything related to testing
 - docs: Everything related to documentation
 - chore: Regular code maintenance
+
+## Notes
+Use the ```notes.md``` file to record what you've done outside of commit messages. It helps build continuity between what's been done, what needs to be done, and by who.
+
+The format is shown below, you can copy paste it and fill in your name, date, etc.
+
+#### Part of Project Worked on
+##### Name
+##### Date (DDMMYYYY format)
+Description of what was done
