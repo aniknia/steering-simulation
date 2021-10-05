@@ -1,9 +1,15 @@
 # Anteater-BAJA-Racing
 
-## Intro
+## Table of Contents
+
+- [Introduction](#Introduction)
+- [Setting up Windows and Matlab for Git](#Setting-Up-our-Windows-Machine-to-Share-Code-with-MATLAB)
+- [Using Git with MATLAB](#Using-Git-with-MATLAB)
+- [Where and How to Write Notes](#Notes)
+
+## Introduction
 
 This repo contains the code for the Anteater BAJA Racing teams steering and suspension simulations.
-
 
 ## Setting Up Your Windows Machine to Share Code with MATLAB
 
