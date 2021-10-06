@@ -11,6 +11,8 @@
 
 This repo contains the code for the Anteater BAJA Racing teams steering and suspension simulations.
 
+If you look around you will wee two different steering simulations, one for a 4 bar linkage style steering and one for a 6 bar rack and pinion style steering. The 4 bar linkage is designed to confirm results that we have from the Vandal I while the 6 bar linkage is meant to test values before we make the Vandal II.
+
 ## Setting Up Your Windows Machine to Share Code with MATLAB
 
 #### Installing Cygwin for MATLAB
