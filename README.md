@@ -11,6 +11,8 @@
 
 This repo contains the code for the Anteater BAJA Racing teams steering and suspension simulations.
 
+If you look around you will wee two different steering simulations, one for a 4 bar linkage style steering and one for a 6 bar rack and pinion style steering. The 4 bar linkage is designed to confirm results that we have from the Vandal I while the 6 bar linkage is meant to test values before we make the Vandal II.
+
 ## Setting Up Your Windows Machine to Share Code with MATLAB
 
 #### Installing Cygwin for MATLAB
@@ -55,6 +57,22 @@ If you do not have permission to edit the path, close MATLAB and reopen it in ad
 
 
 ## Using Git with MATLAB
+
+#### Using Git on MATLAB
+1. Open the project you copied from Github in MATLAB, it should look like this on the left side of your screen
+![Image](images/step_1.png)
+2. Right click on any of the files
+3. Navigate to ```Source Control```
+4. Here you can view your options
+![Gif](images/step_2.gif)
+
+#### Git Options
+The three main options you will be using are ```View and Commit```, ```Push```, and ```Pull```
+
+1. ```View and Commit``` saves the code that you have written so far and allows you to leave a commit message. The format for a commit message is ```prefix: Describe what you did```. Below you can see the possible commit prefixes.
+    - At this point your code is still only on your computer, no one else can view what you've changed so far.
+2. ```Push``` sends all your commited code to Github where other people can view it and download it
+3. ```Pull``` grabs all the code from Github and copies it to your computer
 
 #### Standard Git Commit Prefixes
 These are standard prefixes that you use at the beginning of a git commit message that helps to show others what you've done. These will help us understand when certain changes were made at a glance.
