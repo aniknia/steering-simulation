@@ -4,8 +4,16 @@ function phi = compute_phi(theta, lengths)
 % REDERIVE: the commented phi was an incorrect derivation
 % redo the work and find out what went wrong
 % phi = [asin(C/sqrt(B^2 + A^2)) - atan(A/B), asin(C/sqrt(B^2 + A^2)) + atan(A/B)];
-        B = ( 2 * lengths(2) * lengths(4) ) - ( 2 * lengths(1) * lengths(2) * sin(theta));
-        A = ( 2 * lengths(2) * lengths(3) ) - ( 2 * lengths(1) * lengths(2) * cos(theta));
-        C = -( lengths(1)^2 + lengths(2)^2 + lengths(3)^2 + lengths(4)^2 - lengths(5)^2 - ( 2 * lengths(1) * lengths(3) * cos(theta)) - ( 2 * lengths(1) * lengths(4) * sin(theta)));
-        phi = [atan(B/A) + acos(C / sqrt(A^2 + B^2)), atan(B/A) - acos(C / sqrt(A^2 + B^2))];
+
+        % Changing values back for clarity
+        a = lengths(1);
+        b = lengths(2);
+        cx = lengths(3);
+        cy = lengths(4);
+        h = lengths(5);
+        
+        A = ( ( 2 * a * b * cos(theta)) - (2 * b * cx ));
+        B = ( ( 2 * a * b * sin(theta)) - (2 * b * cy));
+        C = ( a^2 + b^2 + cx^2 + cy^2 - h^2 - ( 2 * a * cx * cos(theta)) - ( 2 * a * cy * sin(theta)));
+        phi = [atan(B/A) + acos(C / sqrt(A^2 + B^2)) + pi, atan(B/A) - acos(C / sqrt(A^2 + B^2)) + pi];
 end
