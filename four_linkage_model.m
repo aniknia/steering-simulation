@@ -2,7 +2,7 @@
 % clear, clc, close all
 
 % set linkage values for testing
-[a, b, cx, cy, h] = deal(3, 3, 6, 0, 4);
+[a, b, cx, cy, h] = deal(1.5, 1.5, 3, 0, 1);
 lengths = [a, b, cx, cy, h];
 
 % find angles of straight travel
