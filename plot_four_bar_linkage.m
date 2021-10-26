@@ -18,3 +18,4 @@ function plot_four_bar_linkage(linkage_points, varargin)
             hold off;
             drawnow;
         end
+end

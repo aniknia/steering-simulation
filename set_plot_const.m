@@ -13,3 +13,4 @@ function set_plot_const(lengths)
         x_lim = (cx/2) + a;
         y_lim = (cx/2) + a;
         set(gca, 'XLim', [-x_lim, x_lim], 'YLim', [-y_lim, y_lim]);
+end
