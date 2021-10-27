@@ -1,2 +1,6 @@
 # File for testing code
 test_code/*
+steering_app/*
+steering_app_1/*
+*.prj
+*.mlappinstall
