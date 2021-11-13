@@ -1,13 +1,16 @@
-function four_linkage_model(a, b, cx, cy, h, varargin)
+function four_linkage_model(trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base, varargin)
     if nargin == 0
-        [a, b, cx, cy, h] = deal(1.5, 1.5, 3, 0, 1);
+        [trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base] = deal(1.5, 1.5, 2, 0, 1, 5);
     end
     % set linkage values for testing
-    lengths = [a, b, cx, cy, h];
+    lengths = [trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base];
 
     % find angles of straight travel and max and min
     % theta_initial, phi_initial, theta_max, theta_min
     angle_init_max_arr = angle_init_max(lengths);
+    
+    % find steering radius
+    steering_radius = compute_steering_radius(lengths, angle_init_max_arr);
 
     % draw linkages when traveling straight
     %set_plot_const(lengths)
@@ -26,11 +29,13 @@ function four_linkage_model(a, b, cx, cy, h, varargin)
         % draws linkages
         % set_plot_const(lengths)
         phi = compute_phi(i, lengths);
-        if nargin == 6
+        if nargin == 7
             app = varargin{1};
-            plot_four_bar_linkage(compute_linkage_points(i, phi, lengths), app);
+            limit = set_plot_const(lengths, app);
+            plot_four_bar_linkage(compute_linkage_points(i, phi, lengths), limit, steering_radius, app);
         else
-            plot_four_bar_linkage(compute_linkage_points(i, phi, lengths));
+            limit = set_plot_const(lengths);
+            plot_four_bar_linkage(compute_linkage_points(i, phi, lengths), limit, steering_radius);
         end
 
         % records driver and passenger side linkage angles

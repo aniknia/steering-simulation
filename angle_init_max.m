@@ -8,4 +8,8 @@ function angle_init_max_arr = angle_init_max(lengths)
     theta_min = asin( lengths(1) / ((lengths(2) + lengths(5)) / sin(theta_max)));
     
     angle_init_max_arr = [theta_initial, phi_initial, theta_max, theta_min];
+    disp(rad2deg(theta_initial));
+    disp(rad2deg(phi_initial));
+    disp(rad2deg(theta_max));
+    disp(rad2deg(theta_min));
 end
