@@ -1,6 +1,6 @@
 function four_linkage_model(trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base, varargin)
     if nargin == 0
-        [trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base] = deal(1.5, 1.5, 2, 0, 1, 5);
+        [trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base] = deal(1.5, 1.5, 3, 0, 1, 5);
     end
     % set linkage values for testing
     lengths = [trailing_arm_1, trailing_arm_2, steering_rack, cy, track_width, wheel_base];
